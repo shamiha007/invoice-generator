@@ -14,45 +14,25 @@ The project has been fully containerized using Docker and Docker Compose, with s
 # # Live Features
 
 ✅ Create Professional Invoices
-
-✅ Real-Time Invoice Preview
-
+✅Real-Time Invoice Preview
 ✅ Save Invoice Data to MySQL Database
-
 ✅ Edit Existing Invoices
-
 ✅ Delete Saved Invoices
-
 ✅ Search & Filter Invoices
-
 ✅ Upload Signature Image
-
 ✅ Draw Digital Signature
-
 ✅ Download Invoices as PDF
-
 ✅ Responsive User Interface
-
 ✅ Full CRUD Operations
-
 ✅ RESTful API Integration
-
 ✅ MySQL Database Connectivity
-
 ✅ Dockerized Frontend, Backend, and Database Services
-
 ✅ Multi-Container Architecture Using Docker Compose
-
 ✅ Easy Deployment with Docker Containers
-
 ✅ Consistent Development and Production Environment
-
 ✅ Containerized MySQL Database with Initialization Scripts
-
 ✅ Nginx-Based Frontend Deployment
-
 ✅ Cross-Platform Application Setup
-
 
 ---
 
