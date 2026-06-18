@@ -1,7 +1,8 @@
 # Smart Invoice Generator
 
-A full stack invoice generator web application built using React JS, Node JS, Express JS, and MySQL.  
-This application allows users to create, preview, save, edit, delete, and download invoices with a clean and responsive user interface.
+A full-stack Invoice Generator web application built using React.js, Vite, Node.js, Express.js, and MySQL. The application enables users to create, preview, save, edit, delete, and download professional invoices through a clean and responsive user interface.
+
+The project has been fully containerized using Docker and Docker Compose, with separate containers for the frontend, backend, and MySQL database. Dockerization ensures consistent development, testing, and deployment environments, making the application easy to set up and run across different systems.
 
 ---
 
@@ -10,19 +11,48 @@ This application allows users to create, preview, save, edit, delete, and downlo
 🔗 https://invoice-generator-smoky-six.vercel.app/
 
 
-# Live Features
+# # Live Features
 
-✅ Create Professional Invoices  
-✅ Real-Time Invoice Preview  
-✅ Save Invoice Data  
-✅ Edit Existing Invoices  
-✅ Delete Saved Invoices  
-✅ Search & Filter Invoices  
-✅ Upload Signature Image  
-✅ Draw Digital Signature  
-✅ Download Invoice as PDF  
-✅ Responsive UI Design  
-✅ Full CRUD Operations  
+✅ Create Professional Invoices
+
+✅ Real-Time Invoice Preview
+
+✅ Save Invoice Data to MySQL Database
+
+✅ Edit Existing Invoices
+
+✅ Delete Saved Invoices
+
+✅ Search & Filter Invoices
+
+✅ Upload Signature Image
+
+✅ Draw Digital Signature
+
+✅ Download Invoices as PDF
+
+✅ Responsive User Interface
+
+✅ Full CRUD Operations
+
+✅ RESTful API Integration
+
+✅ MySQL Database Connectivity
+
+✅ Dockerized Frontend, Backend, and Database Services
+
+✅ Multi-Container Architecture Using Docker Compose
+
+✅ Easy Deployment with Docker Containers
+
+✅ Consistent Development and Production Environment
+
+✅ Containerized MySQL Database with Initialization Scripts
+
+✅ Nginx-Based Frontend Deployment
+
+✅ Cross-Platform Application Setup
+
 
 ---
 
@@ -43,7 +73,61 @@ This application allows users to create, preview, save, edit, delete, and downlo
 - MySQL
 - MySQL Workbench
 
+## Docker 
+- Docker Desktop
+
 ---
+
+## Docker Support
+
+This project has been containerized using Docker and Docker Compose.
+
+### Docker Components
+
+- Frontend Container (React + Vite + Nginx)
+- Backend Container (Node.js + Express.js)
+- MySQL Container
+- Docker Compose for multi-container orchestration
+
+### Docker Files
+
+```text
+docker-compose.yml
+backend/Dockerfile
+frontend/Dockerfile
+frontend/nginx.conf
+backend/.dockerignore
+frontend/.dockerignore
+mysql-init/init.sql
+```
+
+### Run with Docker
+
+Build the containers:
+
+```bash
+docker compose build
+```
+
+Start all services:
+
+```bash
+docker compose up -d
+```
+
+Stop all services:
+
+```bash
+docker compose down
+```
+
+### Container Ports
+
+| Service | Port |
+|----------|--------|
+| Frontend | 5173 |
+| Backend | 5000 |
+| MySQL | 3307 |
 
 # Project Structure
 
@@ -63,7 +147,10 @@ invoice-generator/
 │   ├── server.js
 │   ├── package.json
 │   └── .env
-│
+│   ├── Dockerfile
+│   └── .dockerignore
+|
+|
 ├── frontend/
 │   ├── public/
 │   │
@@ -89,9 +176,17 @@ invoice-generator/
 │   │
 │   ├── package.json
 │   └── vite.config.js
-│
+|   ├── Dockerfile
+│   ├── nginx.conf
+│   └── .dockerignore
+|
+├── mysql-init/
+│   └── init.sql
+|
+├── docker-compose.yml
+├── DEPLOYMENT.md
 └── README.md
-```
+
 
 ---
 
